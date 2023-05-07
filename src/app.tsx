@@ -100,7 +100,6 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
     // unAccessible: <div>unAccessible</div>,
     // 增加一个 loading 的状态
     childrenRender: (children: JSX.Element, props) => {
-      // if (initialState?.loading) return <PageLoading />;
       return (
         <>
           {children}

@@ -10,7 +10,7 @@ import message from "antd/es/message";
  */
 const request = extend({
   credentials:"include", //默认请求是否带上cookie
-  prefix:process.env.NODE_ENV === 'production' ? 'http://user-banked.code-nav.cn' : undefined
+  prefix:process.env.NODE_ENV === 'production' ? 'http://lizh-backend.love' : undefined
   //requestType: "from",
 });
 

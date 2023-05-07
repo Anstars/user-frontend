@@ -1,7 +1,6 @@
 import {PLANET_LINK, SYSTEM_LOGO} from "@/constant";
 import Footer from '@/components/Footer';
 import { login } from '@/services/ant-design-pro/api';
-// import Link from "antd/lib/typography/Link";
 import {Link} from 'umi';
 import {
   LockOutlined,
@@ -18,7 +17,6 @@ import React, { useState } from 'react';
 // @ts-ignore
 import { history, useModel } from 'umi';
 import styles from './index.less';
-// import Link from "antd/lib/typography/Link";
 const LoginMessage: React.FC<{
   content: string;
 }> = ({ content }) => (
@@ -73,7 +71,6 @@ const Login: React.FC = () => {
     }
   };
 
-  // const { status, type: loginType } = userLoginState;
   const temp: API.LoginResult = {status:'error',type:'account'}
   const {status,type:loginType} = userLoginState == null ? temp : userLoginState;
 
