@@ -1,4 +1,4 @@
-import {PLANET_LINK, SYSTEM_LOGO} from "@/constant";
+import {SYSTEM_LOGO} from "@/constant";
 import Footer from '@/components/Footer';
 import { login } from '@/services/ant-design-pro/api';
 import {Link} from 'umi';
@@ -80,7 +80,6 @@ const Login: React.FC = () => {
         <LoginForm
           logo={<img alt="logo" src={SYSTEM_LOGO} />}
           title="用户管理中心"
-          subTitle={<a href={PLANET_LINK} target="_blank" rel={"noreferrer"}></a>}
           initialValues={{
             autoLogin: true,
           }}
@@ -144,17 +143,7 @@ const Login: React.FC = () => {
               自动登录
             </ProFormCheckbox>
               <Link to="/user/register">新用户注册</Link>
-            <a
-              style={{
-                float: 'right',
-              }}
-              href={PLANET_LINK}
-              target={"_blank"} rel={"noreferrer"}
-            >
-              忘记密码?
-            </a>
             </Space>
-
           </div>
         </LoginForm>
       </div>
